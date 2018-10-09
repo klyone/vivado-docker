@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 MAINTAINER Colm Ryan <cryan@bbn.com>
 
@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y \
   libxrandr2 \
   libfreetype6 \
   libfontconfig \
+  libxtst-dev \
+  libxtst-doc \
+  libxtst6 \
   git
 
 # copy in config file
